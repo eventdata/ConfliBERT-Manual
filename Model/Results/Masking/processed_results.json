@@ -1,0 +1,377 @@
+{
+    "Russian forces attacked [MASK] last night.": {
+        "label": "kiev",
+        "confidences": [
+            {
+                "label": "kiev",
+                "confidence": 0.06832262873649597
+            },
+            {
+                "label": "grozny",
+                "confidence": 0.06752696633338928
+            },
+            {
+                "label": "baghdad",
+                "confidence": 0.04458325356245041
+            },
+            {
+                "label": "kabul",
+                "confidence": 0.03297215327620506
+            },
+            {
+                "label": "georgia",
+                "confidence": 0.030132723972201347
+            }
+        ]
+    },
+    "The [MASK] of the country voiced concerns over the recent events.": {
+        "label": "president",
+        "confidences": [
+            {
+                "label": "president",
+                "confidence": 0.7145776748657227
+            },
+            {
+                "label": "senate",
+                "confidence": 0.054057564586400986
+            },
+            {
+                "label": "government",
+                "confidence": 0.04324440285563469
+            },
+            {
+                "label": "parliament",
+                "confidence": 0.02954690344631672
+            },
+            {
+                "label": "speaker",
+                "confidence": 0.014089888893067837
+            }
+        ]
+    },
+    "International organizations called for a [MASK] to the ongoing conflicts.": {
+        "label": "solution",
+        "confidences": [
+            {
+                "label": "solution",
+                "confidence": 0.3740924596786499
+            },
+            {
+                "label": "halt",
+                "confidence": 0.32196974754333496
+            },
+            {
+                "label": "resolution",
+                "confidence": 0.07781806588172913
+            },
+            {
+                "label": "return",
+                "confidence": 0.05815056711435318
+            },
+            {
+                "label": "ceasefire",
+                "confidence": 0.03931329399347305
+            }
+        ]
+    },
+    "The peace treaty was signed in [MASK].": {
+        "label": "1993",
+        "confidences": [
+            {
+                "label": "1993",
+                "confidence": 0.059310879558324814
+            },
+            {
+                "label": "israel",
+                "confidence": 0.04156704992055893
+            },
+            {
+                "label": "croatia",
+                "confidence": 0.03687644749879837
+            },
+            {
+                "label": "france",
+                "confidence": 0.03402739390730858
+            },
+            {
+                "label": "paris",
+                "confidence": 0.033783651888370514
+            }
+        ]
+    },
+    "Many civilians fled to [MASK] to escape the violence.": {
+        "label": "turkey",
+        "confidences": [
+            {
+                "label": "turkey",
+                "confidence": 0.12158840894699097
+            },
+            {
+                "label": "nigeria",
+                "confidence": 0.1009506955742836
+            },
+            {
+                "label": "niger",
+                "confidence": 0.06768278777599335
+            },
+            {
+                "label": "chad",
+                "confidence": 0.059770938009023666
+            },
+            {
+                "label": "cameroon",
+                "confidence": 0.04489736258983612
+            }
+        ]
+    },
+    "The president announced new measures to ensure [MASK].": {
+        "label": ".",
+        "confidences": [
+            {
+                "label": ".",
+                "confidence": 0.6783390045166016
+            },
+            {
+                "label": "safety",
+                "confidence": 0.03974117711186409
+            },
+            {
+                "label": "transparency",
+                "confidence": 0.0359703004360199
+            },
+            {
+                "label": "that",
+                "confidence": 0.033369310200214386
+            },
+            {
+                "label": "accountability",
+                "confidence": 0.01845409907400608
+            }
+        ]
+    },
+    "Military bases in [MASK] were put on high alert.": {
+        "label": "germany",
+        "confidences": [
+            {
+                "label": "germany",
+                "confidence": 0.06076914817094803
+            },
+            {
+                "label": "italy",
+                "confidence": 0.042335834354162216
+            },
+            {
+                "label": "turkey",
+                "confidence": 0.04018181562423706
+            },
+            {
+                "label": "spain",
+                "confidence": 0.030797891318798065
+            },
+            {
+                "label": "california",
+                "confidence": 0.027990926057100296
+            }
+        ]
+    },
+    "The international community was surprised by the sudden [MASK].": {
+        "label": "##ness",
+        "confidences": [
+            {
+                "label": "##ness",
+                "confidence": 0.11535202711820602
+            },
+            {
+                "label": "silence",
+                "confidence": 0.03373360261321068
+            },
+            {
+                "label": "escalation",
+                "confidence": 0.030952919274568558
+            },
+            {
+                "label": "surprise",
+                "confidence": 0.029343415051698685
+            },
+            {
+                "label": "explosion",
+                "confidence": 0.02665591984987259
+            }
+        ]
+    },
+    "Negotiations took place in [MASK] last week.": {
+        "label": "geneva",
+        "confidences": [
+            {
+                "label": "geneva",
+                "confidence": 0.06994125247001648
+            },
+            {
+                "label": "paris",
+                "confidence": 0.0368742011487484
+            },
+            {
+                "label": "london",
+                "confidence": 0.036642979830503464
+            },
+            {
+                "label": "moscow",
+                "confidence": 0.030446631833910942
+            },
+            {
+                "label": "vienna",
+                "confidence": 0.029352568089962006
+            }
+        ]
+    },
+    "The prime minister emphasized the importance of [MASK].": {
+        "label": "accountability",
+        "confidences": [
+            {
+                "label": "accountability",
+                "confidence": 0.035574741661548615
+            },
+            {
+                "label": "security",
+                "confidence": 0.02951846830546856
+            },
+            {
+                "label": "transparency",
+                "confidence": 0.022417757660150528
+            },
+            {
+                "label": "integrity",
+                "confidence": 0.02193664014339447
+            },
+            {
+                "label": "democracy",
+                "confidence": 0.02107382006943226
+            }
+        ]
+    },
+    "The city of [MASK] witnessed heavy artillery fire yesterday.": {
+        "label": "homs",
+        "confidences": [
+            {
+                "label": "homs",
+                "confidence": 0.18732619285583496
+            },
+            {
+                "label": "beirut",
+                "confidence": 0.1790541559457779
+            },
+            {
+                "label": "aleppo",
+                "confidence": 0.14819824695587158
+            },
+            {
+                "label": "damascus",
+                "confidence": 0.08254793286323547
+            },
+            {
+                "label": "seoul",
+                "confidence": 0.06458920985460281
+            }
+        ]
+    },
+    "Humanitarian aid was sent to [MASK] regions affected by the war.": {
+        "label": "the",
+        "confidences": [
+            {
+                "label": "the",
+                "confidence": 0.4296637773513794
+            },
+            {
+                "label": "all",
+                "confidence": 0.15410958230495453
+            },
+            {
+                "label": "those",
+                "confidence": 0.0948970839381218
+            },
+            {
+                "label": "northern",
+                "confidence": 0.013716158457100391
+            },
+            {
+                "label": "other",
+                "confidence": 0.012188808992505074
+            }
+        ]
+    },
+    "Journalists from around the world gathered in [MASK] for a press conference.": {
+        "label": "preparation",
+        "confidences": [
+            {
+                "label": "preparation",
+                "confidence": 0.31989118456840515
+            },
+            {
+                "label": "time",
+                "confidence": 0.036714110523462296
+            },
+            {
+                "label": "washington",
+                "confidence": 0.024668347090482712
+            },
+            {
+                "label": "rome",
+                "confidence": 0.0225302092730999
+            },
+            {
+                "label": "beijing",
+                "confidence": 0.016941862180829048
+            }
+        ]
+    },
+    "The [MASK] resolution was vetoed by major powers.": {
+        "label": "soviet",
+        "confidences": [
+            {
+                "label": "soviet",
+                "confidence": 0.11009296029806137
+            },
+            {
+                "label": "russian",
+                "confidence": 0.06631801277399063
+            },
+            {
+                "label": "french",
+                "confidence": 0.04969073832035065
+            },
+            {
+                "label": "japanese",
+                "confidence": 0.04669811949133873
+            },
+            {
+                "label": "british",
+                "confidence": 0.03864799812436104
+            }
+        ]
+    },
+    "Diplomats are working tirelessly in [MASK] to broker a deal.": {
+        "label": "efforts",
+        "confidences": [
+            {
+                "label": "efforts",
+                "confidence": 0.23989279568195343
+            },
+            {
+                "label": "order",
+                "confidence": 0.11476193368434906
+            },
+            {
+                "label": "trying",
+                "confidence": 0.07639370113611221
+            },
+            {
+                "label": "washington",
+                "confidence": 0.05178633704781532
+            },
+            {
+                "label": "attempts",
+                "confidence": 0.03731221705675125
+            }
+        ]
+    }
+}

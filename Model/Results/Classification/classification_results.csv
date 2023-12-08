@@ -1,0 +1,16 @@
+sentence,predicted_class,KILL,ARREST,FAIL,FORCE,ANY_ACTION
+"The police shot the man, leading to his immediate death.",FAIL,0.012707989,0.000604635,0.59581697,0.000428875,0.390441597
+Officers arrested five individuals who were suspected of theft.,ARREST,0.000334189,0.507876277,0.490719169,0.000748041,0.000322346
+"Despite the ongoing theft, the police just stood by and watched without intervening.",FAIL,0.0023882,0.007102173,0.555271804,0.430177361,0.005060414
+The police used pepper spray and batons to control the unruly crowd.,FAIL,0.007303196,0.000719641,0.764250994,0.000795105,0.226931036
+The officers patrolled the area and interacted with the local residents.,FAIL,9.38E-05,0.001735506,0.997544825,0.000442417,0.000183514
+A woman was killed in the crossfire between the police and the criminals.,FORCE,0.003353649,0.005165835,0.455631256,0.528519154,0.007330173
+The police detained several individuals for questioning.,FAIL,0.000331437,0.496827781,0.501774311,0.0007467,0.000319768
+"Even as the violence escalated, the police failed to take any action.",FAIL,0.002527783,0.008656952,0.528012753,0.45584324,0.004959298
+Riot police used shields and rubber bullets to push back the protestors.,FAIL,0.009463483,0.000613485,0.683697104,0.000497588,0.305728316
+The police carried out a search operation in the neighborhood.,FAIL,9.51E-05,0.003051735,0.996210456,0.000476487,0.000166305
+"During the raid, two suspects were fatally shot by the police.",FAIL,0.000668739,0.408885539,0.588994384,0.00044193,0.00100942
+"After a high-speed chase, the police arrested the driver.",ARREST,0.000333234,0.502030194,0.496572256,0.000742513,0.000321714
+The police were criticized for not doing anything during the major heist.,FAIL,0.002261573,0.007890021,0.574386716,0.41092062,0.004541019
+Officers used tear gas to disperse the mob that was gathering.,FAIL,0.009821688,0.000578498,0.67480725,0.000531604,0.314260989
+The police set up checkpoints throughout the city after the terror alert.,FAIL,9.44E-05,0.001545873,0.997709394,0.000467452,0.000182979
