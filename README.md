@@ -3,6 +3,16 @@
 ## Authors
 Patrick T. Brandt, Vito D'Orazio, Yibo Hu, Latifur Khan, Shreyas Meher, Javier Osorio, Marcus Sianan
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Demo Usage](#demo-usage)
+- [Named Entity Recognition (NER) with ConfliBERT](#ner-named-entity-recognition-with-conflibert)
+- [Classification with ConfliBERT](#classification-with-conflibert)
+- [Masking and Coding Tasks with ConfliBERT](#masking-and-coding-tasks-with-conflibert)
+- [Computational Considerations and Benchmarks for ConfliBERT](#computational-considerations-and-benchmarks-for-conflibert)
+- [ConfliBERT Variants](#conflibert-variants)
+- [References / Citations](#references--citations)
+
 ## Introduction
 Welcome to the ConfliBERT documentation. This guide provides detailed information on what ConfliBERT is and how it can be effectively utilized. ConfliBERT is a state-of-the-art language model tailored for conflict data analysis, fine-tuned to comprehend and categorize political events with high precision.
 
@@ -15,16 +25,7 @@ Date: November 2023
 
 **If you are looking for pre-coded event data, ConfliBERT might not be what you need - places like the Global Terrorism Database (GTD) or Uppsala Conflict Data Program would be more suitable. However, if you're here to make your own event data, or to understand how event data can be generated and coded using machine learning, you've come to the right place.**
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Getting Started with ConfliBERT](#getting-started-with-conflibert)
-- [Demo Usage](#demo-usage)
-- [Named Entity Recognition (NER) with ConfliBERT](#ner-named-entity-recognition-with-conflibert)
-- [Classification with ConfliBERT](#classification-with-conflibert)
-- [Masking and Coding Tasks with ConfliBERT](#masking-and-coding-tasks-with-conflibert)
-- [Computational Considerations and Benchmarks for ConfliBERT](#computational-considerations-and-benchmarks-for-conflibert)
-- [ConfliBERT Variants](#conflibert-variants)
-- [References / Citations](#references--citations)
+
 
 # Demo usage
 
@@ -278,7 +279,7 @@ relations with Iran.
 
 -   Masking and coding tasks
 
-# NER (Named Entity Recognition) with ConfliBERT {#ner-named-entity-recognition-with-conflibert}
+# NER (Named Entity Recognition) with ConfliBERT
 
 Named Entity Recognition (NER) is a fundamental task in the field of
 natural language processing (NLP) that involves identifying and
