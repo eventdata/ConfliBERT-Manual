@@ -15,22 +15,16 @@ Date: November 2023
 
 **If you are looking for pre-coded event data, ConfliBERT might not be what you need - places like the Global Terrorism Database (GTD) or Uppsala Conflict Data Program would be more suitable. However, if you're here to make your own event data, or to understand how event data can be generated and coded using machine learning, you've come to the right place.**
 
-Whether you are a seasoned data scientist or new to machine learning,
-this guide is structured to help you navigate through the varied
-functionalities of ConfliBERT with ease. For a hands-on introduction and
-demonstration, jump straight to our [Demo usage]. If you're interested
-in applying ConfliBERT for **Named Entity Recognition**, see the section
-on [NER (Named Entity Recognition) with
-ConfliBERT](#ner-named-entity-recognition-with-conflibert). To dive into
-**text classification**, visit the section on [Classification with
-ConfliBERT]. For **masking and coding tasks**, refer to the section on
-[Masking and Coding Tasks with ConfliBERT]. The section on
-[Computational Considerations and Benchmarks for ConfliBERT] covers
-vital aspects of performance optimization.To explore the various
-adaptations of ConfliBERT, see the section on [ConfliBERT Variants]. At
-any point, you can refer to the [References / Citations] for further
-reading and information sources that have informed the development and
-use of ConfliBERT.
+## Table of Contents
+- [Introduction](#introduction)
+- [Getting Started with ConfliBERT](#getting-started-with-conflibert)
+- [Demo Usage](#demo-usage)
+- [Named Entity Recognition (NER) with ConfliBERT](#ner-named-entity-recognition-with-conflibert)
+- [Classification with ConfliBERT](#classification-with-conflibert)
+- [Masking and Coding Tasks with ConfliBERT](#masking-and-coding-tasks-with-conflibert)
+- [Computational Considerations and Benchmarks for ConfliBERT](#computational-considerations-and-benchmarks-for-conflibert)
+- [ConfliBERT Variants](#conflibert-variants)
+- [References / Citations](#references--citations)
 
 # Demo usage
 
