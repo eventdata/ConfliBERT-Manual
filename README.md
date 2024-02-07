@@ -293,10 +293,10 @@ categorizing entities. It uses the context within which words appear to
 determine their meaning and classify them accordingly. The standard
 model can identify a variety of entities such as:
 
--   `PERSON`: People, including fictional persons.
--   `GPE`: Geopolitical entities, like countries, cities, and states.
--   `ORG`: Organizations, including governmental, companies, and
-    agencies.
+- **`PERSON`**: People, including fictional persons. 🟦
+- **`GPE`**: Geopolitical entities, like countries, cities, and states. 🟩
+- **`ORG`**: Organizations, including governmental, companies, and agencies. 🟧
+
 
 ConfliBERT enhances BERT's capabilities by being specifically fine-tuned
 on conflict and event data. This specialized focus enables it to be more
