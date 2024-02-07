@@ -1,29 +1,19 @@
----
-title: ConfliBERT Documentation and Usage
-author: "Patrick T. Brandt, Vito D'Orazio, Yibo Hu, Latifur Khan, Shreyas Meher, Javier Osorio, Marcus Sianan"
-description: What ConfliBERT is and how to use it.
-date: November 2023
-version:  0.5
-output:
-  html_document:
-    anchor_sections: true
-    css: styles.css
-    number_sections: true
-    toc: true
-    toc_float: true
-    toc_depth: 2
-    collapsed: true
-    smooth_scroll: true
-bibliography: ConfliBERT.bib  
-editor_options: 
-  markdown: 
-    wrap: 72
+# ConfliBERT Documentation and Usage
+
+## Authors
+Patrick T. Brandt, Vito D'Orazio, Yibo Hu, Latifur Khan, Shreyas Meher, Javier Osorio, Marcus Sianan
+
+## Introduction
+Welcome to the ConfliBERT documentation. This guide provides detailed information on what ConfliBERT is and how it can be effectively utilized. ConfliBERT is a state-of-the-art language model tailored for conflict data analysis, fine-tuned to comprehend and categorize political events with high precision.
+
+This document is intended for researchers and practitioners who require an in-depth understanding of political events and conflict data. With ConfliBERT, you can enhance your research capabilities, leverage nuanced data interpretations, and develop more informed analyses of political events.
+
+Version: 0.5  
+Date: November 2023
+
 ---
 
-\> If you are looking for event data - you should not be here. If you
-want to make your own event data - you are in the right place. If you
-want datasets that are already event-coded using ML. Go to GTD, Uppsala,
-etc. Not in the intro specifically.
+**If you are looking for pre-coded event data, ConfliBERT might not be what you need - places like the Global Terrorism Database (GTD) or Uppsala Conflict Data Program would be more suitable. However, if you're here to make your own event data, or to understand how event data can be generated and coded using machine learning, you've come to the right place.**
 
 Whether you are a seasoned data scientist or new to machine learning,
 this guide is structured to help you navigate through the varied
