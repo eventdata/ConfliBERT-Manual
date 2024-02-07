@@ -755,59 +755,44 @@ illustrate these concepts clearly:
 
 **Metrics Explained:**
 
-<p>[**True Positives (TP):** Sentences where the Predicted Category
-matches the actual category (highest logit
-score).]{style="color: green;"}</p>
-
-<p>[**False Positives (FP):** Cases where the Predicted Category was
-chosen, but it is not the actual category.]{style="color: red;"}</p>
-
-<p>[**False Negatives (FN):** Cases where the actual category was
-correct, but the Predicted Category was
-different.]{style="color: red;"}</p>
-
-<p>[**True Negatives (TN):** All other cases where neither the predicted
-nor the actual category was chosen.]{style="color: green;"}</p>
+- **True Positives (TP):** Sentences where the Predicted Category matches the actual category (highest logit score). 🟢
+- **False Positives (FP):** Cases where the Predicted Category was chosen, but it is not the actual category. 🔴
+- **False Negatives (FN):** Cases where the actual category was correct, but the Predicted Category was different. 🔴
+- **True Negatives (TN):** All other cases where neither the predicted nor the actual category was chosen. 🟢
 
 **Hypothetical Example for Classification:**
 
-Consider an event: *Israeli forces attacked Hamas in Gaza City.* Let's
-place this event in a 2x2 confusion matrix to understand potential
-outcomes from ConfliBERT's classification:
+Consider an event: *Israeli forces attacked Hamas in Gaza City.* Let's place this event in a 2x2 confusion matrix to understand potential outcomes from ConfliBERT's classification:
 
-| True Positive (TP)                                                                                                                | False Negative (FN)                                                                                                                                |
-|----------------------------------|--------------------------------------|
-| ConfliBERT accurately classifies the event as "Material Conflict" due to the active engagement and physical altercation reported. | ConfliBERT incorrectly classifies the event as a non-conflict category, such as "Verbal Cooperation," missing the material nature of the conflict. |
-
-| False Positive (FP)                                                                                                                      | True Negative (TN)                                                                                                |
-|---------------------------------------|---------------------------------|
-| ConfliBERT incorrectly classifies a peaceful negotiation as "Material Conflict," suggesting a physical altercation where there was none. | ConfliBERT correctly identifies that no material conflict occurred when Israeli forces did not engage with Hamas. |
+| Category | Description |
+|----------|-------------|
+| **True Positive (TP)** | ConfliBERT accurately classifies the event as "Material Conflict" due to the active engagement and physical altercation reported. 🟢 |
+| **False Negative (FN)** | ConfliBERT incorrectly classifies the event as a non-conflict category, such as "Verbal Cooperation," missing the material nature of the conflict. 🔴 |
+| **False Positive (FP)** | ConfliBERT incorrectly classifies a peaceful negotiation as "Material Conflict," suggesting a physical altercation where there was none. 🔴 |
+| **True Negative (TN)** | ConfliBERT correctly identifies that no material conflict occurred when Israeli forces did not engage with Hamas. 🟢 |
 
 **Detailed Breakdown:**
 
-<p>[**True Positive (TP):** - *Reality:* Israeli forces engage in a
-physical altercation with Hamas in Gaza City. - *ConfliBERT Says:*
-"Material Conflict." - *Outcome:* ConfliBERT's classification aligns
-with the real-world event, providing accurate data for
-analysis.]{style="color: green;"}</p>
+- **True Positive (TP):** 
+  - *Reality:* Israeli forces engage in a physical altercation with Hamas in Gaza City.
+  - *ConfliBERT Says:* "Material Conflict."
+  - *Outcome:* ConfliBERT's classification aligns with the real-world event, providing accurate data for analysis. 🟢
 
-<p>[**False Positive (FP):** - *Reality:* A diplomatic meeting between
-Israeli and Hamas representatives occurs without physical
-confrontation. - *ConfliBERT Says:* "Material Conflict." - *Outcome:*
-ConfliBERT erroneously signals a conflict, potentially leading to
-misinformed analysis.]{style="color: red;"}</p>
+- **False Positive (FP):** 
+  - *Reality:* A diplomatic meeting between Israeli and Hamas representatives occurs without physical confrontation.
+  - *ConfliBERT Says:* "Material Conflict."
+  - *Outcome:* ConfliBERT erroneously signals a conflict, potentially leading to misinformed analysis. 🔴
 
-<p>[**False Negative (FN):** - *Reality:* Israeli forces attack Hamas in
-Gaza City. - *ConfliBERT Says:* "Verbal Cooperation" or another
-non-conflict category. - *Outcome:* Misclassification downplays the
-severity, potentially affecting response
-strategies.]{style="color: red;"}</p>
+- **False Negative (FN):** 
+  - *Reality:* Israeli forces attack Hamas in Gaza City.
+  - *ConfliBERT Says:* "Verbal Cooperation" or another non-conflict category.
+  - *Outcome:* Misclassification downplays the severity, potentially affecting response strategies. 🔴
 
-<p>[**True Negative (TN):** - *Reality:* Israeli and Hamas
-representatives engage in peaceful talks. - *ConfliBERT Says:* "Verbal
-Cooperation" or an appropriate non-conflict category. - *Outcome:*
-ConfliBERT accurately reflects the peaceful nature of the event, aiding
-correct analysis and policy decisions.]{style="color: green;"}</p>
+- **True Negative (TN):** 
+  - *Reality:* Israeli and Hamas representatives engage in peaceful talks.
+  - *ConfliBERT Says:* "Verbal Cooperation" or an appropriate non-conflict category.
+  - *Outcome:* ConfliBERT accurately reflects the peaceful nature of the event, aiding correct analysis and policy decisions. 🟢
+
 
 **Applying Metrics for Evaluation:**
 
