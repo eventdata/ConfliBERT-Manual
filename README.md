@@ -3,7 +3,7 @@ title: ConfliBERT Documentation and Usage
 author: "Patrick T. Brandt, Vito D'Orazio, Yibo Hu, Latifur Khan, Shreyas Meher, Javier Osorio, Marcus Sianan"
 description: What ConfliBERT is and how to use it.
 date: November 2023
-version:  0.1
+version:  0.5
 output:
   html_document:
     anchor_sections: true
