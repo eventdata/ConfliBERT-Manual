@@ -305,6 +305,23 @@ relations, and conflict studies.
 
 > What are you trying to get out of this? Actors or statements (verbs)? Sentence has been NER'd vs 
 
+Incorporating a dependency parse tree into your Markdown document can be very insightful in the section that discusses Named Entity Recognition (NER) with ConfliBERT. Here's how you can explain the inclusion of an SVG image (like the parse tree) in this section:
+
+---
+
+### Visualization of Contextual Relationships with Dependency Parse Trees
+
+To further illustrate the power of context in understanding and identifying entities, we provide a dependency parse tree visualization. This graphical representation showcases the grammatical structure of a sentence, highlighting how ConfliBERT might leverage syntactic relationships between words to improve entity recognition:
+
+![Dependency Parse Tree](Images/sentence.svg)
+
+*Figure: A dependency parse tree visualization of a sentence analyzed by ConfliBERT.*
+
+In the figure above, each word is a node connected by arrows representing grammatical relationships. This visualization is instrumental in depicting how entities and actions interconnect within a sentence, providing a structural context that ConfliBERT utilizes for NER tasks.
+
+---
+
+
 ### Fine-Tuning for Custom Entities
 
 However, the scope of entities that can be recognized is not limited to
