@@ -345,31 +345,17 @@ Fine-tuning allows ConfliBERT to expand its understanding and
 recognition capabilities to align with specific research needs or
 domain-specific requirements.
 
-<p>[President Biden]{style="color: blue;"}
-[PERSON]{style="font-weight: bold;"} said that the
-[U.S.]{style="color: green;"} [GPE]{style="font-weight: bold;"} alliance
-with [Japan]{style="color: green;"} [GPE]{style="font-weight: bold;"} is
-stronger than ever.</p>
 
-<p>[Saudi Arabia]{style="color: green;"}
-[GPE]{style="font-weight: bold;"} expressed intent to restore diplomatic
-relations with [Iran]{style="color: green;"}
-[GPE]{style="font-weight: bold;"}.</p>
+**President Biden** 🟦 **PERSON** said that the **U.S.** 🟩 **GPE** alliance with **Japan** 🟩 **GPE** is stronger than ever.
 
-<p>[China]{style="color: green;"} [GPE]{style="font-weight: bold;"}
-provided humanitarian aid to [Turkey]{style="color: green;"}
-[GPE]{style="font-weight: bold;"}.</p>
+**Saudi Arabia** 🟩 **GPE** expressed intent to restore diplomatic relations with **Iran** 🟩 **GPE**.
 
-<p>[President Zelenskyy]{style="color: blue;"}
-[PERSON]{style="font-weight: bold;"} accused
-[Russia]{style="color: green;"} [GPE]{style="font-weight: bold;"} of war
-crimes.</p>
+**China** 🟩 **GPE** provided humanitarian aid to **Turkey** 🟩 **GPE**.
 
-<p>[Israeli forces]{style="color: orange;"}
-[ORG]{style="font-weight: bold;"} attacked
-[Hamas]{style="color: orange;"} [ORG]{style="font-weight: bold;"} in
-[Gaza City]{style="color: green;"}
-[GPE]{style="font-weight: bold;"}.</p>
+**President Zelenskyy** 🟦 **PERSON** accused **Russia** 🟩 **GPE** of war crimes.
+
+**Israeli forces** 🟧 **ORG** attacked **Hamas** 🟧 **ORG** in **Gaza City** 🟩 **GPE**.
+
 
 Event data, in conflict research, refers to the systematic and
 chronological cataloging of political interactions, actions, and
