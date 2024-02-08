@@ -535,22 +535,21 @@ Here is a general format you might encounter:
 -   **Precision:** This is a measure of the accuracy provided that a
     specific class (or label) has been predicted. It is the number of
     true positives divided by the sum of true positives and false
-    positives.
+    positives [[7]](#7), [[5]](#5), [[4]](#4).
 
 -   **Recall:** This is a measure of the ability of the model to find
     all the relevant cases within a dataset. It is the number of true
-    positives divided by the sum of true positives and false negatives.
+    positives divided by the sum of true positives and false negatives [[7]](#7), [[5]](#5), [[4]](#4).
 
 -   **F1-Score:** The F1 score is the harmonic mean of precision and
-    recall. It provides a balance between the two. When it is closer to
+    recall [[8]](#8). It provides a balance between the two. When it is closer to
     1, it indicates better performance, and 0 indicates poorer
     performance.
 
 -   **Accuracy:** This metric calculates the ratio of correctly
-    predicted observation to the total observations.
-
-(Note: For a complete evaluation, one would typically calculate these
-metrics for each entity type, as well as overall.)
+    predicted observation to the total observations. [[5]](#5), [[6]](#6). 
+    
+(Note: For a complete evaluation, one would typically calculate these metrics for each entity type, as well as overall.)
 
 ------------------------------------------------------------------------
 
@@ -1289,3 +1288,25 @@ Halterman, A., Bagozzi, B., Beger, A., Schrodt, P., & Scraborough, G. (2023). PL
 <a id="3">[3]</a> 
 Osorio, J., Pavon, V., Salam, S., Holmes, J., Brandt, P. T., & Khan, L. (2019). Translating CAMEO verbs for automated coding of event data. International Interactions, 45(6), 1049-1064.
 
+<a id="4">[4]</a> 
+Halterman, A., Schrodt, P. A., Beger, A., Bagozzi, B. E., & Scarborough, G. I. (2023). Creating
+Custom Event Data Without Dictionaries: A Bag-of-Tricks. arXiv preprint
+arXiv:2304.01331.
+
+<a id="5">[5]</a> 
+O’Brien, S. P. (2010). Crisis Early Warning and Decision Support: Contemporary Approaches
+and Thoughts on Future Research. International Studies Review, 12(1), 87–104.
+
+<a id="6">[6]</a> 
+Peterson, A., & Spirling, A. (2018). Classification Accuracy as a Substantive Quantity of Interest:
+Measuring Polarization in Westminster Systems. Political Analysis, 26(1), 120–128.
+
+<a id="7">[7]</a> 
+Yang, Y., & Liu, X. (1999). A Re-examination of Text Categorization Methods. In Proceedings
+of the 22nd Annual International ACM SIGIR Conference on Research and Development in
+Information Retrieval (pp. 42–49).
+ 
+<a id="8">[8]</a> 
+Zhang, D., Wang, J., & Zhao, X. (2015). Estimating the Uncertainty of Average F1 Scores. In
+Proceedings of the 2015 International Conference on the Theory of Information Retrieval
+(pp. 317–320).
