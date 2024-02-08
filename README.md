@@ -1283,7 +1283,7 @@ computational infrastructure.
 Hu, Y., Hosseini, M., Skorupa Parolin, E., Osorio, J., Khan, L., Brandt, P., & D’Orazio, V. (2022, July). Conflibert: A pre-trained language model for political conflict and violence. Association for Computational Linguistics.
 
 <a id="2">[2]</a> 
-Halterman, A., Bagozzi, B., Beger, A., Schrodt, P., & Scraborough, G. (2023). PLOVER and POLECAT: A New Political Event Ontology and Dataset.
+Halterman, A., Bagozzi, B., Beger, A., Schrodt, P., & Scarborough, G. (2023). PLOVER and POLECAT: A New Political Event Ontology and Dataset.
 
 <a id="3">[3]</a> 
 Osorio, J., Pavon, V., Salam, S., Holmes, J., Brandt, P. T., & Khan, L. (2019). Translating CAMEO verbs for automated coding of event data. International Interactions, 45(6), 1049-1064.
