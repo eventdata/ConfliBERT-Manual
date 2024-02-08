@@ -122,10 +122,9 @@ to political events analysis.
 
 # Introduction to ConfliBERT:
 
-ConfliBERT @hu2022conflibert is a
-domain-specific pre-trained language model tailored for the analysis of
+ConfliBERT is a domain-specific pre-trained language model tailored for the analysis of
 political conflict and violence that was developed through a
-collaboration between conflict scholars and computer scientists. It was
+collaboration between conflict scholars and computer scientists [[1]](#1). It was
 introduced in a paper titled "ConfliBERT: A Pre-trained Language Model
 for Political Conflict and Violence," which was presented at the North
 American Chapter of the Association for Computational Linguistics
@@ -140,7 +139,7 @@ The traditional methods used by many event data systems to understanding
 these dynamics, such as manual coding and pattern-matching techniques,
 though valuable, have limitations in terms of scale and adaptability.
 Also, many of these legacy systems are dictionary-based, which makes
-them difficult to maintain and update @halterman2023plover. ConfliBERT helps to
+them difficult to maintain and update [[2]](#2). ConfliBERT helps to
 overcome these issues with its machine learning approach to data
 analysis.
 
@@ -689,14 +688,12 @@ context and content of the input text.
 
 ### Expanding Classification Categories
 
-@osorio2019translating
-
 Similar to entity recognition, classification categories can be
 tailored. Researchers can introduce additional categories like "Economic
 Sanctions", "Legal Actions", "Diplomatic Events", etc., by fine-tuning
 ConfliBERT with appropriately tagged training data. This custom
 classification can help in creating more nuanced datasets that capture
-the complexity of international relations and conflict scenarios.
+the complexity of international relations and conflict scenarios. [[3]](#3)
 
 The fine-tuning process for expanding classification capabilities
 involves:
@@ -738,7 +735,7 @@ context of political event categorization using ConfliBERT, drawing upon
 foundational concepts in machine learning classification such as True
 Positives (TP), False Positives (FP), False Negatives (FN), and True
 Negatives (TN) as explained in the Google Machine Learning Crash Course
-(see @googleMLCrashCourse). We will use a hypothetical example to
+(see [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course)). We will use a hypothetical example to
 illustrate these concepts clearly:
 
 **Metrics Explained:**
@@ -1282,3 +1279,13 @@ computational infrastructure.
 ## Extending ConfliBERT to other languages
 
 # References / Citations
+
+<a id="1">[1]</a> 
+Hu, Y., Hosseini, M., Skorupa Parolin, E., Osorio, J., Khan, L., Brandt, P., & D’Orazio, V. (2022, July). Conflibert: A pre-trained language model for political conflict and violence. Association for Computational Linguistics.
+
+<a id="2">[2]</a> 
+Halterman, A., Bagozzi, B., Beger, A., Schrodt, P., & Scraborough, G. (2023). PLOVER and POLECAT: A New Political Event Ontology and Dataset.
+
+<a id="3">[3]</a> 
+Osorio, J., Pavon, V., Salam, S., Holmes, J., Brandt, P. T., & Khan, L. (2019). Translating CAMEO verbs for automated coding of event data. International Interactions, 45(6), 1049-1064.
+
