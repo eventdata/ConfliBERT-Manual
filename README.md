@@ -1273,7 +1273,137 @@ computational infrastructure.
 
 ## ConfliBERT Arabic (AR)
 
+### Introduction
+**ConfliBERT-Arabic** [[9]](#9) specifically caters to the Arabic language, focusing on political conflicts and violence analysis in the Middle East. It pioneers in addressing the challenges posed by Arabic's rich morphology and script variations, setting a new precedent for domain-specific NLP applications.
+
+#### Key Differentiators from Original ConfliBERT
+
+- **Tailored to Arabic**: Unlike the original ConfliBERT, which was developed primarily for English, ConfliBERT-Arabic is meticulously designed for Arabic, a Semitic language known for its complex morphology and unique script characteristics. It incorporates specialized pre-training on a corpus of Arabic texts related to regional politics and conflicts, significantly enhancing its relevance and effectiveness in Arabic political discourse analysis.
+
+- **Enhanced Data Collection**: ConfliBERT-Arabic's corpus encompasses an extensive range of sources across 19 Arabic-speaking countries, specifically curated to include politically charged content from newspapers, mainstream media, and government announcements. This diverse and rich dataset enables the model to grasp the nuanced political lexicon and context inherent in Arabic texts, a notable advancement over the general approach taken by the original ConfliBERT.
+
+- **Addressing Arabic NLP Challenges**: The model uniquely overcomes Arabic-specific NLP challenges, such as handling different script forms for a single character, absence of capital letters, vowel mark omissions, and the language's inflectional nature. These tailored adjustments ensure superior performance in tasks like Named Entity Recognition (NER), where these linguistic features critically impact model accuracy.
+
+#### Advantages Over Other Models
+
+- **Superior Performance on Domain-specific Tasks**: ConfliBERT-Arabic consistently outperforms both general-purpose models like BERT and AraBERT, and the original ConfliBERT, in domain-specific tasks. Its pre-training on a politically focused Arabic corpus allows it to achieve higher accuracy in detecting and analyzing political conflicts and violence, demonstrating its effectiveness in real-world applications.
+
+- **Customized for Arabic Political Discourse**: The model's specialized pre-training corpus, coupled with its design to accommodate Arabic's linguistic complexities, enables it to navigate the intricacies of political discourse within the Middle East effectively. This capability marks a significant improvement over other models, which may lack the nuanced understanding necessary for such contextually rich analyses.
+
+- **Innovative Data Collection and Pre-training Approach**: By leveraging a broad spectrum of sources specifically chosen for their political content, ConfliBERT-Arabic benefits from a rich and varied linguistic dataset. This approach, focusing on quality and relevance, sets it apart from others and underpins its advanced performance.
+
+### List of Sources Used for Corpora
+This table contains a comprehensive list of news sources used to build the corpora. The list includes mainstream media outlets, newspapers, and government sources from countries like Palestine, Saudi Arabia, Lebanon, USA, Turkey, Kyrgyzstan, Russia, Iran, Syria, Iraq, Egypt, Sudan, Libya, Qatar, Morocco, UK, Tajikistan, Mauritania, and Italy, ensuring a diverse and rich dataset for training ConfliBERT-Arabic.
+
+### Statistics of the Extracted Political and Conflict-Specific Dataset
+- **Number of Articles:** 2,995,874
+- **Words (Tokens):** 928,729,513
+- **Number of Sentences:** 24,221,481
+- **Average Number of Words Per Sentence:** 38.34
+- **Overall Token Frequency:** 5,924,007
+
+These statistics showcase the substantial volume and depth of the dataset curated for training ConfliBERT-Arabic, emphasizing its comprehensive nature and the extensive preprocessing undertaken to refine the data.
+
+### Table 3: Summary F1 Results of Our Evaluation by Task
+| Model                           | NER F1 Score | BC F1 Score |
+|---------------------------------|--------------|-------------|
+| **ConfliBERT-Arabic**           |              |             |
+| Multilingual-Uncased-Cont       | 77.07        | 90.85       |
+| Multilingual-Cased-Cont         | 77.14        | 90.78       |
+| AraBERT-Cont                    | 77.88        | 91.54       |
+| **BERT Multilingual**           |              |             |
+| Uncased                         | 76.69        | 89.12       |
+| Cased                           | 76.86        | 89.10       |
+| **AraBERT**                     | 75.89        | 90.16       |
+
+This table compares ConfliBERT-Arabic's performance against the Multilingual BERT and AraBERT models across Named Entity Recognition (NER) and Binary Classification (BC) tasks, highlighting its superior efficacy.
+
+### Table 4: Summary of F1 Measure Results of NER Datasets
+- The table includes F1 scores for datasets like AnerCORP, Kalimat, LinCE, WikiANN, WDC, Polyglot, and Aqmar. Specific F1 scores for these datasets underline ConfliBERT-Arabic's advanced capability in accurately identifying named entities within political and conflict-related Arabic texts. 
+
+| Dataset      | Domain        | ConfliBERT-Arabic F1 Score | BERT AraBERT F1 Score | BERT Multilingual Cased F1 Score | BERT Multilingual Uncased F1 Score |
+|--------------|---------------|--------------------------|----------------------|----------------------------------|------------------------------------|
+| AnerCORP     | Newswire      | 81.17                     | 79.7                 | 75.23                            | 75.46                              |
+| Kalimat      | Newspaper     | 82.09                     | 81.53                | 82.74                            | 82.63                              |
+| LinCE        | Social Media  | 79.96                     | 77.47                | 76.39                            | 76.59                              |
+| WikiANN      | Wikipedia     | 92.97                     | 92.88                | 91.73                            | 91.68                              |
+| WDC          | Wikipedia     | 72.91                     | 71.49                | 73.03                            | 73.27                              |
+| Polyglot     | Wikipedia     | 64.61                     | 60.111               | 62.66                            | 62.03                              |
+| Aqmar        | Wikipedia     | 71.45                     | 68.07                | 76.28                            | 75.23                              |
+
+### Table 5: Summary of F1 Measure Results for Classification Dataset
+- This table outlines F1 scores for classification tasks across datasets such as Ultimate Arabic News, DataSet for Arabic Classification, Arabic Dialects & Topics, SANAD, and Arafacts. ConfliBERT-Arabic's scores are shown to surpass those of other models, demonstrating its proficiency in classifying texts pertaining to political conflicts and violence.
+
+| Dataset                        | Domain           | ConfliBERT-Arabic F1 Score | BERT AraBERT F1 Score | BERT Multilingual Cased F1 Score | BERT Multilingual Uncased F1 Score |
+|--------------------------------|------------------|--------------------------|----------------------|----------------------------------|------------------------------------|
+| Ultimate Arabic News           | News             | 97.46                     | 95.74                | 94.27                            | 94.80                              |
+| DataSet for Arabic Classification | News             | 97.47                     | 97.05                | 96.15                            | 96.18                              |
+| Arabic Dialects & Topics       | Social Media     | 67.09                     | 60.01                | 59.90                            | 60.40                              |
+| SANAD AlArabiya News           | News             | 98.83                     | 98.42                | 97.11                            | 97.13                              |
+| SANAD AlKhaleej News           | News             | 99.51                     | 98.93                | 98.02                            | 98.22                              |
+| Arafacts                       | Fact Checking    | 75.21                     | 72.02                | 70.34                            | 67.55                              |
+
+
+
+These tables provide a clear and structured presentation of ConfliBERT-Arabic's performance across various NER and BC tasks, highlighting its comparative advantage over other models like BERT Multilingual and AraBERT.
+
+#### Conclusion and Future Directions
+
+**ConfliBERT-Arabic** represents a pioneering step towards addressing the unique challenges of Arabic NLP in the realm of political conflicts and violence. By building on the strengths of ConfliBERT and introducing innovative solutions to language-specific challenges, it offers an invaluable tool for researchers, policymakers, and analysts focused on the Middle East. Future enhancements will focus on expanding the model's applications to more complex NLP tasks, optimizing its training process, and exploring additional domain-specific adaptations to reinforce its standing as the premier Arabic NLP model for political analysis.
+
+
 ## ConfliBERT Spanish (ES)
+
+### Introduction
+**ConfliBERT-Spanish** [[10]](#10) specifically caters to the Spanish language, focusing on political conflicts and violence analysis in Latin America. It pioneers in addressing the challenges posed by Spanish's unique grammatical features and script variations, setting a new precedent for domain-specific NLP applications in Spanish.
+
+#### Key Differentiators from Original ConfliBERT
+
+- **Tailored to Spanish**: Unlike the original ConfliBERT, which was developed primarily for English, ConfliBERT-Spanish is meticulously designed for Spanish, taking into account its pronoun-drop characteristic and rich inflection for person, number, gender, and tense into the verb conjugation. It incorporates specialized pre-training on a corpus of Spanish texts related to regional politics and conflicts, significantly enhancing its relevance and effectiveness in Spanish political discourse analysis.
+
+- **Enhanced Data Collection**: ConfliBERT-Spanish's corpus encompasses an extensive range of sources across Spanish-speaking countries, specifically curated to include politically charged content from newspapers, mainstream media, and government announcements. This diverse and rich dataset enables the model to grasp the nuanced political lexicon and context inherent in Spanish texts, a notable advancement over the general approach taken by the original ConfliBERT.
+
+- **Addressing Spanish NLP Challenges**: The model uniquely overcomes Spanish-specific NLP challenges, such as the pronoun-drop feature, which makes NLP analysis particularly challenging due to the richer inflection into verb conjugation. These tailored adjustments ensure superior performance in tasks like Named Entity Recognition (NER), where these linguistic features critically impact model accuracy.
+
+#### Advantages Over Other Models
+
+- **Superior Performance on Domain-specific Tasks**: ConfliBERT-Spanish consistently outperforms both general-purpose models like Multilingual BERT (mBERT) and BETO, and the original ConfliBERT, in domain-specific tasks. Its pre-training on a politically focused Spanish corpus allows it to achieve higher accuracy in detecting and analyzing political conflicts and violence, demonstrating its effectiveness in real-world applications.
+
+- **Customized for Spanish Political Discourse**: The model's specialized pre-training corpus, coupled with its design to accommodate Spanish's grammatical and linguistic complexities, enables it to navigate the intricacies of political discourse within Latin America effectively. This capability marks a significant improvement over other models, which may lack the nuanced understanding necessary for such contextually rich analyses.
+
+- **Innovative Data Collection and Pre-training Approach**: By leveraging a broad spectrum of sources specifically chosen for their political content, ConfliBERT-Spanish benefits from a rich and varied linguistic dataset. This approach, focusing on quality and relevance, sets it apart from others and underpins its advanced performance.
+
+### Statistics of the Extracted Political and Conflict-Specific Dataset
+- **Number of Articles:** 8,275,941
+- **Words (Tokens):** 2,070,287,605
+- **Number of Sentences:** 52,485,055
+- **Average Number of Words Per Sentence:** 39.45
+- **Overall Token Frequency:** 6,238,240
+
+These statistics showcase the substantial volume and depth of the dataset curated for training ConfliBERT-Spanish, emphasizing its comprehensive nature and the extensive preprocessing undertaken to refine the data.
+
+### Summary of F1 Score Results for Fine-Tuned Model Evaluation
+
+| Dataset         | Domain   | Task | Models              | mBERT cased | mBERT uncased | BETO cased | BETO uncased |
+|-----------------|----------|------|---------------------|-------------|---------------|------------|--------------|
+| Huffingtonpost  | Politics | BC   | Baseline            | 87.57       | 86.29         | 88.16      | 87.50        |
+|                 |          |      | **ConfliBERT Spanish** | **89.60**      | **88.90**         | **88.97**     | **88.54**       |
+| Protest         | Conflict | BC   | Baseline            | 79.56       | 83.64         | 82.95      | 85.54        |
+|                 |          |      | **ConfliBERT Spanish** | **84.01**      | **83.91**         | **82.96**     | **87.25**       |
+| Insight Crime   | Crime    | MLC  | Baseline            | 74.49       | 72.35         | 75.78      | 75.48        |
+|                 |          |      | **ConfliBERT Spanish** | **77.74**      | **77.13**         | **77.31**     | **76.15**       |
+| Protest         | Conflict | MLC  | Baseline            | 56.49       | 46.88         | 58.07      | 58.10        |
+| | | | **ConfliBERT Spanish** | **57.99** | **63.48** | **59.73** | **59.64** |
+| Mx News | Politics | NER | Baseline | 82.92 | 82.69 | 83.36 | 78.72 |
+| | | | **ConfliBERT Spanish** | **83.27** | **83.31** | **83.60** | **83.96** |
+
+These tables provide a clear and structured presentation of ConfliBERT-Spanish's performance across various NER, BC, and MLC tasks, highlighting its comparative advantage over other models like mBERT and BETO.
+
+#### Conclusion and Future Directions
+
+**ConfliBERT-Spanish** represents a pioneering step towards addressing the unique challenges of Spanish NLP in the realm of political conflicts and violence. By building on the strengths of ConfliBERT and introducing innovative solutions to language-specific challenges, it offers an invaluable tool for researchers, policymakers, and analysts focused on Latin America. Future enhancements will focus on expanding the model's applications to more complex NLP tasks, optimizing its training process, and exploring additional domain-specific adaptations to reinforce its standing as the premier Spanish NLP model for political analysis. 
+
+Our future research will also aim to increase the size of our domain-specific corpora, further optimize ConfliBERT-Spanish, evaluate it on more challenging tasks such as comprehension, inference, question-answering, and uncertainty qualification, and develop specific applications for analyzing armed actors and organized criminal groups in Latin America. Additionally, thanks to NSF support, we plan to develop a community of ConfliBERT-Spanish users in Latin America, enabling scholars and government authorities to use this advanced cyberinfrastructure to address pressing security challenges in the region.
 
 ## Extending ConfliBERT to other languages
 
@@ -1310,3 +1440,9 @@ Information Retrieval (pp. 42–49).
 Zhang, D., Wang, J., & Zhao, X. (2015). Estimating the Uncertainty of Average F1 Scores. In
 Proceedings of the 2015 International Conference on the Theory of Information Retrieval
 (pp. 317–320).
+
+<a id="9">[9]</a>
+Alsarra, S., Abdeljaber, L., Yang, W., Zawad, N., Khan, L., Brandt, P., ... & D’Orazio, V. (2023, September). Conflibert-arabic: A pre-trained arabic language model for politics, conflicts and violence. In Proceedings of the 14th International Conference on Recent Advances in Natural Language Processing (pp. 98-108). 
+
+<a id="10">[10]</a>
+Yang, W., Alsarra, S., Abdeljaber, L., Zawad, N., Delaram, Z., Osorio, J., ... & D’Orazio, V. (2023, December). Conflibert-spanish: A pre-trained spanish language model for political conflict and violence. In 2023 7th IEEE Congress on Information Science and Technology (CiSt) (pp. 287-292). IEEE.
