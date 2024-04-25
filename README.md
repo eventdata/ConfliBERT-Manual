@@ -120,6 +120,9 @@ Overall, this Colab document is an all-in-one toolkit for users looking
 to leverage the ConfliBERT model for their research or projects related
 to political events analysis.
 
+We also have a seperate Colab document for downstream tasks with finetuned models for Classification and 
+Named Entity Recognition here [Downstream Colab](https://colab.research.google.com/drive/1asD_z6RplGVAiFUMZN6-kr7jZXGXhLgr?usp=drive_link).
+
 # Introduction to ConfliBERT:
 
 ConfliBERT is a domain-specific pre-trained language model tailored for the analysis of
