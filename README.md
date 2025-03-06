@@ -18,8 +18,8 @@ Welcome to the ConfliBERT documentation. This guide provides detailed informatio
 
 This document is intended for researchers and practitioners who require an in-depth understanding of political events and conflict data. With ConfliBERT, you can enhance your research capabilities, leverage nuanced data interpretations, and develop more informed analyses of political events.
 
-Version: 0.5.5  
-Date: May 2024
+Version: 0.5.6  
+Date: March 2025
 
 ---
 
