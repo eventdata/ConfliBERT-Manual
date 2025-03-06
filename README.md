@@ -121,7 +121,7 @@ to leverage the ConfliBERT model for their research or projects related
 to political events analysis.
 
 We also have a seperate Colab document for downstream tasks with finetuned models for Classification and 
-Named Entity Recognition here [Downstream Colab](https://colab.research.google.com/drive/1asD_z6RplGVAiFUMZN6-kr7jZXGXhLgr?usp=drive_link).
+Named Entity Recognition here [Downstream Colab](https://colab.research.google.com/drive/1U6odXh7KkI6IZdw2PbXdP2VD6wFi_5C2?usp=sharing).
 
 # Introduction to ConfliBERT:
 
